@@ -173,21 +173,6 @@ class LunchLady < Foods
     puts "Thanks for ordering!".cyan
     puts
     seperator
-    order_again?
-  end
-  
-  def order_again?
-    puts "Would you like to order again?".cyan
-    puts "If yes, type 'yes'!"
-    puts "If no, type literally anything else."
-    seperator
-    input = gets.strip
-    if input == "yes" 
-      choose_meal
-    else
-      puts "Ok byeeeee".yellow
-      exit
-    end
   end
 
 end
